@@ -1,14 +1,14 @@
 from django.shortcuts import render,HttpResponse,get_object_or_404
 from django.contrib import admin,auth
 from django.shortcuts import redirect
-from .forms import MessageForm
+from .forms import MessageForm,QueryForm
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.dispatch import receiver
 from django.contrib.auth import login,authenticate
-from .models import Messages
+from .models import Messages,Query
 import zulip
 
 def home(request):
@@ -32,6 +32,8 @@ def home(request):
 
     else:
         form=MessageForm()
+        querys=QueryForm()
         msgs=Messages.objects.all().order_by('-date')
-        args={'form':form,'msgs':msgs}
+        qu=Query.objects.all()
+        args={'form':form,'msgs':msgs,'querys':querys,'qu':qu}
         return render(request,'enigma/base.html',args)
