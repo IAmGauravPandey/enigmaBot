@@ -1,11 +1,113 @@
-<form method="post">
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enigma</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Freckle+Face" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="{% static 'css/hover-min.css' %}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/jpg" href="{% static 'img/testback.jpg' %}" />
+        <style>
+
+            body{
+                background-image: url('/static/img/alco.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #main{
+                height: 500px;
+                margin-top: 110px;
+                margin-bottom: 110px;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            #sub-main{
+                height: 100%;
+            }
+            #sub-main-left{
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+            }
+            #sub-main-right{
+                height: 100%;
+            }
+            #left-img{    
+                height: 200px;
+                width: 200px;
+                margin-top: 50px;
+                border-radius: 50%;
+            }
+            #left-text{
+                font-size: 20px;
+                color: silver;
+            }
+            .hero
+            {
+            width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color:#FFF;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="125425761325-8gcpnjqfc8gtorukb2t6nqjdal4bgaku.apps.googleusercontent.com.apps.googleusercontent.com">
+    </head>
+
+<body>
+<div class="container" id="main">
+		<div class="row" id="sub-main">
+			<div class="col s6" id="sub-main-left">
+				<div class="row" style="text-align:center;">
+					<div class="col s12">
+						<img src="{% static 'img/testback.jpg' %}" id="left-img">
+					</div>
+				</div>
+				<div class="row" style="text-align:center;">
+						<div class="col s12" id="left-text">
+                               <span style="font-family: Impact;"><font size="48">Enigma Bot</font></span>
+                                <div>How About Some Hacking?</div>
+                                <div>Let's Do it</div>
+						</div>
+					</div>
+			</div>
+			<div class="col s6" id="sub-main-right">
+				<div class="row">
+					<div class="col s12">
+					<div style="margin: 20% 10%; text-align: center;">
+						<form method="post">
+						<div class="form-group">
+                            
+
     {% csrf_token %}
     {{ form.title }}
-    <br>Write a message
+    <br><label for="comment" style="font-family: Impact;"><font size="72">Query</font></label><br><br>
+    <div class="hero">
     {{ form.messages }}
-    <br>
+    </div>
+    <br><br><br>
     <button class="btn btn-danger " >Send</button>
     </form>
     {% for msg in msgs%}
-        <p>{{ msg.messages }}</p>
+       
     {% endfor %}
+                        
+                    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+</body>
+</html>
