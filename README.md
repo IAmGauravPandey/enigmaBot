@@ -5,6 +5,9 @@
 Hey Hackers, I'm Enigma, the most feature-rich Zulip Chat Bot built for solving your queries. I was developed by the Team Enigma Rebooted in the HackFest 2k19, the offcial Fest of Department of Computer Science and Engineering, IIT(ISM) Dhanbad.I'm famous for solving various programming queries and, am really good in mind games like Hangman,Memory game and Scrabble.
 So? Up for a challenge? Follow the upcoming steps and Voila!
 
+## Link to Video
+https://www.youtube.com/watch?v=Gl35gneRS-U&feature=youtu.be
+
 ## Features:
    * Chatting
    * Description of a Linux Command
