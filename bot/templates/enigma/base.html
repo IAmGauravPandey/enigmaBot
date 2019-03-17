@@ -5,8 +5,7 @@
     <head>
         <title>Enigma</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Comfortaa|Freckle+Face" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
@@ -14,7 +13,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="shortcut icon" type="image/jpg" href="{% static 'img/testback.jpg' %}" />
         <style>
-                .typewriter h3 {
+                .typewriter h2 {
                     overflow: hidden; /* Ensures the content is not revealed until the animation */
                     border-right: .15em solid blue; /* The typwriter cursor */
                     white-space: nowrap; /* Keeps the content on a single line */
@@ -23,7 +22,8 @@
                     animation: 
                       typing 3.5s steps(40, end),
                       blink-caret .75s step-end infinite;
-                      padding: 35px;
+                      padding: 5px;
+                      font-family: 'Times New Roman', Times, serif;
                   }
                   
                   /* The typing effect */
@@ -65,10 +65,17 @@
                 margin-top: 50px;
                 border-radius: 50%;
             }
+            #l-img{    
+                height: 200px;
+                width: 200px;
+                margin-top: 20px;
+                border-radius: 50%;
+            }
             #left-text{
                 font-size: 20px;
                 color: silver;
             }
+            
             .hero
             {
             width: 75%;
@@ -83,8 +90,14 @@
             .about
             {
                 padding-top: 200px;
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
+                font-family: Impact;
+                }
+                mark
+                {
+                    background-color: #ccc;
+                    color: black;
+                }
+                
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -101,11 +114,11 @@
 						<img src="{% static 'img/testback.jpg' %}" id="left-img">
 					</div>
 				</div>
-				<div class="row" style="text-align:center;">
+                <div class="row" style="text-align:center;">
+                    <span style="font-family: Impact; color: silver;"><font size="72"><strong>Enigma Bot</strong></font></span>
 						<div class="col s12" id="left-text">
-                               <span style="font-family: Impact;"><font size="48">Enigma Bot</font></span>
-                                <div>How About Some Hacking?</div>
-                                <div>Let's Do it</div>
+                                <div class="typewriter"><h2>Hey Hackers, I'm Enigma !!</h2></div>
+                                <div style="font-family:'Times New Roman', Times, serif">How about some Hacking?</div>
 						</div>
 					</div>
 			</div>
@@ -138,11 +151,81 @@
             
         </div>
         
-	</div>
-    <div class="about">
-            <h1><strong>About Enigma</strong></h1></div>
-    <div class="typewriter">
-            <h3><strong>Hey Hackers, I'm the most feature rich Zulip Chat Bot built for solving your queries.</strong></h3>
     </div>
+    <div class="container">
+    <div class="about"><h1><strong>About Enigma</strong></h1></div>
+    <div>
+        <div class="pull-left"><img src="{% static 'img/testback.jpg' %}" id="l-img"></div>
+            <h3><br><br>Hey there, I'm <strong>Enigma</strong>, the most feature-rich Zulip Chat Bot built for solving your queries. I was developed by the <strong>Team Enigma Rebooted</strong> in the HackFest 2k19, the offcial Fest of Department of Computer Science and Engineering, IIT(ISM) Dhanbad.I'm famous for solving various programming queries and, am really good in mind games like Hangman,Memory game and Scrabble.<br>So? Up for a challenge? Follow the upcoming steps and Voila!  </h3>
+    </div>
+    <div style="font-family: Impact;padding-top: 50px"><h1><strong>Features</strong></h1></div>
+    <span style="font-family:Impact;"><h3>I can perform the following queries:<br></h3></span>
+    <div class="container" style="font-family:Impact;"><h4>    <strong>1. Chatting</strong><br><br>
+
+            <strong>2. Description of any Linux Command.</strong><br><br>
+            
+            <strong>3. Specific Command according to the use given as Input.</strong><br><br>
+            
+            <strong>4. Linux priv escalation checker.</strong><br><br>
+            
+            <strong>5. Hacker News on Keyword.</strong><br><br>
+            
+            <strong>6. IP scan.</strong><br><br>
+            
+            <strong>7. Url scan</strong><br><br>
+            
+            <strong>8. File scan</strong><br>
+            <br>
+            <strong>9. Linux enumeration</strong><br><br>
+            
+            <strong>10. Linux priv escalation checker</strong><br><br>
+            
+            <strong>11. Dictionary based search</strong><br><br>
+            
+            <strong>12. Mind Games</strong>
+            <div style="padding-left:50px;"><br>
+                    <strong>a) Hangman</strong><br><br>
+
+                    <strong>b) Scrabble</strong><br><br>
+                    
+                    <strong>c) Stone Paper Scissor</strong><br><br>
+                    
+                    <strong>d) Memory Game</strong>
+            </div>
+            <br><br>
+            <strong>13. Calculator<strong><br><br>
+            <strong>14. Live Sports Score</strong>
+        </h4></div>
+
+            <div style="font-family: Impact;padding-top: 10px"><h1><strong>Instructions to Use Me</strong></h1></div>
+            <div class="container" style="font-family:Impact;"><h4>    <strong>1. Create a Zulip Realm</strong><br><br>
+
+                <strong>2. Goto to settings and create a new generic bot named 'Enigma'. (Settings can be found in dropdown of gear icon present in top right corner of zulip realm)</strong><br><br>
+                
+                <strong>3. Download the zuliprc file for your bot and place it in your home directory as '.zuliprc'.</strong><br><br>
+                
+                <strong>4. Install all the requirements using <mark> pip install -r requirements.txt</mark></strong><br><br>
+                
+                <strong>5. In <mark>bot.py </mark>, change site in <mark>self.client = zulip.Client(site="https://chunkzz.zulipchat.com/api/") </mark>to url of your created zulip realm.Do the same for<mark> BOT_MAIL variable</mark></strong><br><br>
+                
+                <strong>6. Run <mark>bot.py</mark>> using the lastest version of Python.<mark>
+                 python bot.py</mark></strong><br><br>
+                
+                <strong>7. Head over to your created zulip realm and start using the bot.</strong></h4></div>
+                <div style="font-family: Impact;padding-top: 10px"><h1><strong>Contributors</strong></h1></div>
+                <div class="container" style="font-family:Impact;"><h4>
+                            <strong>Swapnil Narayan</strong><br><br>
+        
+                            <strong>Gaurav Pandey</strong><br><br>
+                            
+                            <strong>Suyash Srivastava</strong><br><br>
+                            
+                            <strong>Samyak Tanted</strong><br>
+                            <br>
+                            <strong>Madhav Shah Sisodiya</strong><br><br><br><br><br>
+                            
+                    </div></h4></div>
+                    <span style="text-align:center; padding-left: 500px;">Developed by Swap</span>
+                
 </body>
 </html>
