@@ -35,23 +35,24 @@ So? Up for a challenge? Follow the upcoming steps and Voila!
    * Head over to your created zulip realm and start using the bot.
    
 ## Screenshots:
-<h3>Query- hello :<h3>
+Some of the query outputs are shown below. We've used a local server to get the input query, thus making it a real time conversation.
+<h4>Query- hello :<h4>
 <p align="center">
 <img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/hello.png" height="400px"/>
 </p>
-<h3>Query- help :<h3>
+<h4>Query- help :<h4>
 <p align="center">
 <img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/help.png" height="400px"/>
 </p>
-<h3>Query- man cat :<h3>
+<h4>Query- man cat :<h4>
 <p align="center">
 <img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/mancat.png" height="400px"/>
 </p>
-<h3>Query- news hacker :<h3>
+<h4>Query- news hacker :<h4>
 <p align="center">
 <img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/hackernews.png" height="400px"/>
 </p>
-<h3>Query- hangman start:<h3>
+<h4>Query- hangman start:<h4>
 <p align="center">
 <img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/hangman.png" height="400px"/>
 </p>
