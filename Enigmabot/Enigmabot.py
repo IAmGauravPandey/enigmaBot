@@ -2,11 +2,8 @@ import sys, os, zulip
 sys.path.insert(0,os.getcwd())
 
 from typing import Any, Dict
-from imdbpie import Imdb
-import lyricwikia
-from weather import Weather
 
-import utils, sps, mindGame, hangman, scrabble, todo, calculator, news, currency, cricketScore, dictionary
+import utils, sps, mindGame, hangman, scrabble, todo, calculator, news, cricketScore, dictionary
 from wit import Wit
 client = Wit('VMPD5FWPJO6QB7XVP5OKWR4TMHJFKZ75')
 

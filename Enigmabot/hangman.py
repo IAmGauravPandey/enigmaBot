@@ -15,7 +15,6 @@ def get_response(message: Dict[str, str], bot_handler: Any) -> str:
 	content = message['content']
 	words = content.lower().split()
 	if len(words) < 2:
-
 		return "Invalid Input."
 
 	elif words[2] == "start" :
