@@ -35,6 +35,23 @@ So? Up for a challenge? Follow the upcoming steps and Voila!
    * Head over to your created zulip realm and start using the bot.
    
 ## Screenshots:
+hello
 <p align="center">
-<img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/schreenshot.png" height="400px"/>
+<img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/hello.png" height="400px"/>
+</p>
+help
+<p align="center">
+<img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/help.png" height="400px"/>
+</p>
+man cat
+<p align="center">
+<img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/mancat.png" height="400px"/>
+</p>
+hackernews
+<p align="center">
+<img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/hackernews.png" height="400px"/>
+</p>
+hangman start
+<p align="center">
+<img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/hangman.png" height="400px"/>
 </p>
