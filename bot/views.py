@@ -27,6 +27,8 @@ def home(request):
                 "content":mssg
             }
             client.send_message(rq)
+            for i in range(1000000):
+                x=1
             f = pathlib.Path("/home/gauravpandey/Desktop/hackfest/bot/messages.txt").read_text()
             print(f)
             form=MessageForm()

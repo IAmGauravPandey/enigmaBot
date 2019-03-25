@@ -1,0 +1,13 @@
+Django==2.1.7
+psycopg2==2.7.7
+psycopg2-binary==2.7.7
+pytz==2018.9
+imdbpie==5.2.0
+lyricwikia==0.1.9
+PyDictionary==1.5.2
+pyenchant==2.0.0
+RandomWords==0.2.1
+weather-api==0.0.4
+wit==4.3.0
+zulip==0.4.0
+zulip_bots==0.4.1
