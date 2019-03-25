@@ -155,8 +155,8 @@
                         <div style="margin: 20% 10%; text-align: center;">
                             <form method="post">
                                 <div class="form-group">
-
-
+                                    
+                                    
                                     {% csrf_token %}
                                     <br><label for="comment" style="font-family: Impact;">
                                         <font size="72">Query</font>
@@ -175,11 +175,13 @@
                 </div>
                 
             </div>
-            <div style="color:#FFF;">
-                {{ response }}
-            </div>
+           
         </div>
-
+        
+    </div>
+    <h2>Your answer:</h2><br>
+    <div style="color:black;padding:10px;background-color:#FFF;">
+        {{ response }}
     </div>
     <div class="container">
         <div class="about">
@@ -269,7 +271,7 @@
         </h4>
     </div>
     <span style="text-align:center; padding-left: 500px;">Developed by Swap</span>
-
+    
 </body>
 
 </html>
