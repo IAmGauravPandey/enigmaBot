@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.dispatch import receiver
 from django.contrib.auth import login,authenticate
 from .models import Messages,Query
+import pathlib
 import zulip
 
 def home(request):
@@ -25,15 +26,16 @@ def home(request):
                 "to":"Enigma-bot@hackfest19.zulipchat.com",
                 "content":mssg
             }
-            result = client.send_message(rq)
-            print(result)
-            msg.save()
-            return redirect('/')
+            client.send_message(rq)
+            f = pathlib.Path("/home/gauravpandey/Desktop/hackfest/bot/messages.txt").read_text()
+            print(f)
+            form=MessageForm()
+            querys=QueryForm()
+            args={'form':form,'querys':querys,'response':f}
+            return render(request,'enigma/base.html',args)
 
     else:
         form=MessageForm()
         querys=QueryForm()
-        msgs=Messages.objects.all().order_by('-date')
-        qu=Query.objects.all()
-        args={'form':form,'msgs':msgs,'querys':querys,'qu':qu}
+        args={'form':form,'querys':querys}
         return render(request,'enigma/base.html',args)
