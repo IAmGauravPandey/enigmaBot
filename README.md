@@ -2,25 +2,25 @@
 <p align="center">
 <img src = "https://github.com/gauravpandey1998/enigmaBot/blob/master/enigma.jpg" height="400px"/>
 </p>
-Hey Hackers, I'm Enigma, the most feature-rich Zulip Chat Bot built for solving your queries. I was developed by the Team Enigma Rebooted in the HackFest 2k19, the offcial Fest of Department of Computer Science and Engineering, IIT(ISM) Dhanbad.I'm famous for solving various programming queries and, am really good in mind games like Hangman,Memory game and Scrabble.
+Hey Hackers, I'm Enigma Bot, the most feature-rich Zulip Chat Bot built for solving your queries. I was developed by the Team Enigma Rebooted in the HackFest 2k19, the offcial Fest of Department of Computer Science and Engineering, IIT(ISM) Dhanbad.I'm famous for solving various programming queries and, am really good in mind games like Hangman,Memory game and Scrabble.
 So? Up for a challenge? Follow the upcoming steps and Voila!
 
 ## Link to Video
 https://www.youtube.com/watch?v=Gl35gneRS-U&feature=youtu.be
 
 ## Features:
-   * Chatting
+   * Chatting with User
    * Description of a Linux Command
    * SSH a remote user
-   * Hacker news on keyword
+   * Hacker news on keyword/ commands
    * Dictionary based search
-   * Mind Games:
+   * Mind Games like:
      * Hangman
      * scrabble
      * Stone Paper Scissor
      * Mind Game
    * Calculator
-   * Live Sports Score
+   * Live Sports Score (Cricket/ Football)
    
 ## How to Deploy:
    * Create a Zulip Realm
