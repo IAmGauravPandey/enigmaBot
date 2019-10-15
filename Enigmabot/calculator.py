@@ -38,4 +38,4 @@ def get_calculator_response(message: Dict[str, str], bot_handler: Any) -> str:
 		temp = temp / temp1 
 		return str( temp )
 	else :
-		return "Under Construction"
+		return "This Feature is Under Construction"
