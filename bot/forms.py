@@ -25,4 +25,4 @@ Queries=[
     ('help','Help'),
 ]
 class QueryForm(forms.Form):
-    query=forms.CharField(label="Select your Query",widget=forms.Select(choices=Queries))
+    query=forms.CharField(label="Select your Query from given dropdown",widget=forms.Select(choices=Queries))
